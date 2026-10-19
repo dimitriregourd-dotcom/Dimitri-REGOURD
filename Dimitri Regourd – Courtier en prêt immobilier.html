@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dimitri Regourd – Courtier en prêt immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f6;--surface:#ffffff;--ink:#14292b;--muted:#51656a;--line:#d5dddd;--accent:#0f5c5a;--accent-ink:#ffffff;--hl:#c8873a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a1b;--surface:#152426;--ink:#e8efef;--muted:#9bb0b3;--line:#27393b;--accent:#5fc0b8;--accent-ink:#0e1a1b;--hl:#e0a35c}}
+:root[data-theme="dark"]{--bg:#0e1a1b;--surface:#152426;--ink:#e8efef;--muted:#9bb0b3;--line:#27393b;--accent:#5fc0b8;--accent-ink:#0e1a1b;--hl:#e0a35c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.12;margin:0;font-weight:700;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--hl);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.2rem;text-decoration:none}
+nav{display:flex;gap:22px;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;padding:72px 0 80px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:20px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.sim{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px}
+.sim h2{font-size:1.25rem;margin-bottom:18px}
+.f{margin-bottom:18px}
+.f label{display:flex;justify-content:space-between;font-size:.92rem;color:var(--muted);margin-bottom:6px}
+.f label b{color:var(--ink);font-weight:600}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.res{border-top:1px solid var(--line);padding-top:18px;margin-top:6px}
+.res .n{font-family:Fraunces,Georgia,serif;font-size:2.6rem;font-weight:700;color:var(--accent);line-height:1}
+.res small{display:block;color:var(--muted);font-size:.85rem;margin-top:10px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:12px;max-width:20em}
+.intro{color:var(--muted);max-width:40em;margin:0 0 40px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.grid3 h3{font-size:1.2rem;margin-bottom:8px}
+.grid3 p{margin:0;color:var(--muted)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:s}
+ol.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:14px}
+ol.steps li::before{content:counter(s);font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.5rem;color:var(--accent)}
+ol.steps h3{font-size:1.05rem;margin:4px 0 6px}
+ol.steps p{margin:0;color:var(--muted);font-size:.95rem}
+.contact{background:var(--surface)}
+.contact .box{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px}
+.contact dt{color:var(--muted)}.contact dd{margin:0;font-weight:500}
+footer{padding:28px 0;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line)}
+@media (max-width:820px){.hero,.contact .box{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}ol.steps{grid-template-columns:1fr 1fr}.hero{padding:44px 0 52px}nav{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#">Dimitri Regourd</a>
+<nav><a href="#apropos">À propos</a><a href="#services">Mon rôle</a><a href="#methode">Ma méthode</a><a href="#contact">Contact</a></nav>
+<a class="btn" href="#contact">Prendre rendez-vous</a>
+</div></header>
+
+<main>
+<div class="wrap hero">
+<div>
+<h1>Le bon prêt immobilier, au meilleur taux, sans courir les banques.</h1>
+<p class="lead">Courtier en prêt immobilier avec 15 ans d’expérience dans le domaine, je monte votre dossier, je négocie avec les établissements bancaires et je vous accompagne jusqu’à la signature.</p>
+<div class="cta"><a class="btn" href="#contact">Étudier mon projet</a><a class="btn alt" href="#services">Ce que je fais</a></div>
+</div>
+<div class="sim" id="simulateur">
+<h2>Estimez votre mensualité</h2>
+<div class="f"><label for="m">Montant emprunté <b id="mv"></b></label><input id="m" type="range" min="50000" max="800000" step="5000" value="250000"></div>
+<div class="f"><label for="d">Durée <b id="dv"></b></label><input id="d" type="range" min="5" max="30" step="1" value="20"></div>
+<div class="f"><label for="t">Taux annuel hors assurance <b id="tv"></b></label><input id="t" type="range" min="1" max="6" step="0.05" value="3.4"></div>
+<div class="res"><div class="n" id="res"></div><small id="tot"></small><small>Simulation indicative, sans valeur contractuelle. Votre taux réel dépend de votre profil.</small></div>
+</div>
+</div>
+
+<section id="apropos"><div class="wrap">
+<h2>Dimitri Regourd, 15 ans d’expérience dans le domaine</h2>
+<p class="intro">Formé au crédit immobilier, j’ai 15 ans d’expérience dans le domaine. J’ai accompagné de nombreux acquéreurs et investisseurs, et je connais les attentes des banques comme les difficultés que rencontrent les emprunteurs. Cette expérience me permet de présenter chaque dossier sous son meilleur jour et de vous dire franchement ce qui est réaliste.</p>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Un seul interlocuteur entre vous et les banques</h2>
+<p class="intro">Je travaille pour vous, pas pour un établissement. Mon travail : faire en sorte que votre dossier arrive devant les bons interlocuteurs, bien présenté.</p>
+<div class="grid3">
+<div><h3>Achat de résidence principale</h3><p>Primo-accédant ou non, je construis un plan de financement adapté à votre budget, y compris avec un prêt à taux zéro ou un prêt d’accession si vous y avez droit.</p></div>
+<div><h3>Investissement locatif</h3><p>Je vous aide à financer un bien destiné à la location et à structurer l’emprunt pour préserver votre capacité d’achat future.</p></div>
+<div><h3>Rachat et renégociation</h3><p>Votre crédit actuel est-il encore au bon taux ? Je calcule le gain possible et je négocie le rachat si l’opération en vaut la peine.</p></div>
+</div>
+</div></section>
+
+<section id="methode"><div class="wrap">
+<h2>De votre projet à la signature, en quatre étapes</h2>
+<p class="intro">Chaque étape est expliquée avant d’être lancée. Vous savez toujours où en est votre dossier.</p>
+<ol class="steps">
+<li><h3>Premier échange</h3><p>Nous faisons le point sur votre projet, vos revenus et votre apport. C’est gratuit et sans engagement.</p></li>
+<li><h3>Étude de faisabilité</h3><p>J’évalue votre capacité d’emprunt et je vous indique le budget réaliste.</p></li>
+<li><h3>Négociation</h3><p>Je présente votre dossier aux banques, je compare les offres et je négocie taux, assurance et conditions.</p></li>
+<li><h3>Signature</h3><p>Je vérifie l’offre de prêt avec vous et je suis le dossier jusqu’à l’acte chez le notaire.</p></li>
+</ol>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap box">
+<div>
+<h2>Parlons de votre projet</h2>
+<p class="intro" style="margin-bottom:24px">Décrivez-moi votre situation en quelques lignes. Je vous réponds sous 24 heures ouvrées.</p>
+<a class="btn" href="mailto:dimitri.regourd@drcourtage.fr?subject=Mon%20projet%20immobilier">Envoyer un e-mail</a>
+</div>
+<dl>
+<dt>Téléphone</dt><dd><a href="tel:+33767827262">07 67 82 72 62</a></dd>
+<dt>E-mail</dt><dd><a href="mailto:dimitri.regourd@drcourtage.fr">dimitri.regourd@drcourtage.fr</a></dd>
+<dt>Adresse</dt><dd>67 allée Jean Jaurès, 31000 Toulouse</dd>
+<dt>Horaires</dt><dd>Du lundi au vendredi, 9 h – 19 h</dd>
+<dt>Rendez-vous</dt><dd>Au Cabinet, à domicile ou en visioconférence</dd>
+</dl>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="y"></span> Dimitri Regourd – Courtier en prêt immobilier. Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous engager. [Mentions légales : n° ORIAS, statut, médiateur à compléter.]</div></footer>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var fmt=function(n){return Math.round(n).toLocaleString("fr-FR")};
+function calc(){
+var P=+$("m").value,y=+$("d").value,t=+$("t").value,n=y*12,r=t/1200;
+var M=r===0?P/n:P*r/(1-Math.pow(1+r,-n));
+$("mv").textContent=fmt(P)+" €";
+$("dv").textContent=y+" ans";
+$("tv").textContent=t.toFixed(2).replace(".",",")+" %";
+$("res").textContent=fmt(M)+" € / mois";
+$("tot").textContent="Coût total du crédit : "+fmt(M*n-P)+" € d’intérêts";
+}
+["m","d","t"].forEach(function(i){$(i).addEventListener("input",calc)});
+calc();
+$("y").textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
